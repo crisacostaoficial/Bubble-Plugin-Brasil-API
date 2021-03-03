@@ -1,0 +1,113 @@
+{
+    "calls": {
+        "AAC": {
+            "initialized": true,
+            "method": "get",
+            "name": "CEP",
+            "publish_as": "data",
+            "rank": 0,
+            "ret_value": "api.1614743636217x426000411791196160.plugin_api.AAC",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAC\":{\"caption\":\"API Call\",\"fields\":{\"_p_cep\":{\"ret_value\":\"text\",\"caption\":\"cep\",\"sample_value\":\"79020250\",\"path\":[\"cep\"]},\"_p_state\":{\"ret_value\":\"text\",\"caption\":\"state\",\"sample_value\":\"MS\",\"path\":[\"state\"]},\"_p_city\":{\"ret_value\":\"text\",\"caption\":\"city\",\"sample_value\":\"Campo Grande\",\"path\":[\"city\"]},\"_p_neighborhood\":{\"ret_value\":\"text\",\"caption\":\"neighborhood\",\"sample_value\":\"Jardim dos Estados\",\"path\":[\"neighborhood\"]},\"_p_street\":{\"ret_value\":\"text\",\"caption\":\"street\",\"sample_value\":\"Rua da Paz\",\"path\":[\"street\"]},\"_p_service\":{\"ret_value\":\"text\",\"caption\":\"service\",\"sample_value\":\"viacep\",\"path\":[\"service\"]}}}}",
+            "url": "https://brasilapi.com.br/api/cep/v1/[cep]",
+            "url_params": {
+                "AAD": {
+                    "doc": "Número do CEP",
+                    "key": "cep",
+                    "private": true,
+                    "value": "00000000"
+                }
+            }
+        },
+        "AAE": {
+            "doc_link": "",
+            "initialized": true,
+            "is_list": true,
+            "method": "get",
+            "name": "Bancos",
+            "publish_as": "data",
+            "rank": 1,
+            "ret_value": "api.1614743636217x426000411791196160.plugin_api.AAE",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAE\":{\"caption\":\"Banco\",\"fields\":{\"_p_ispb\":{\"ret_value\":\"text\",\"caption\":\"ispb\",\"sample_value\":\"00000000\",\"path\":[\"ispb\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"BCO DO BRASIL S.A.\",\"path\":[\"name\"]},\"_p_code\":{\"ret_value\":\"number\",\"caption\":\"code\",\"sample_value\":1,\"path\":[\"code\"]},\"_p_fullName\":{\"ret_value\":\"text\",\"caption\":\"fullName\",\"sample_value\":\"Banco do Brasil S.A.\",\"path\":[\"fullName\"]}}}}",
+            "url": "https://brasilapi.com.br/api/banks/v1"
+        },
+        "AAF": {
+            "initialized": true,
+            "method": "get",
+            "name": "Banco",
+            "publish_as": "data",
+            "rank": 2,
+            "ret_value": "api.1614743636217x426000411791196160.plugin_api.AAF",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAF\":{\"caption\":\"Banco\",\"fields\":{\"_p_ispb\":{\"ret_value\":\"text\",\"caption\":\"ispb\",\"sample_value\":\"18236120\",\"path\":[\"ispb\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"NU PAGAMENTOS S.A.\",\"path\":[\"name\"]},\"_p_code\":{\"ret_value\":\"number\",\"caption\":\"code\",\"sample_value\":260,\"path\":[\"code\"]},\"_p_fullName\":{\"ret_value\":\"text\",\"caption\":\"fullName\",\"sample_value\":\"Nu Pagamentos S.A.\",\"path\":[\"fullName\"]}}}}",
+            "url": " https://brasilapi.com.br/api/banks/v1/[banco]",
+            "url_params": {
+                "AAG": {
+                    "doc": "Número do banco",
+                    "key": "banco",
+                    "private": true,
+                    "value": "260"
+                }
+            }
+        },
+        "AAH": {
+            "initialized": true,
+            "method": "get",
+            "name": "DDD",
+            "publish_as": "data",
+            "rank": 3,
+            "ret_value": "api.1614743636217x426000411791196160.plugin_api.AAH",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAH\":{\"caption\":\"DDD\",\"fields\":{\"_p_state\":{\"ret_value\":\"text\",\"caption\":\"state\",\"sample_value\":\"SP\",\"path\":[\"state\"]},\"_p_cities\":{\"ret_value\":\"list.text\",\"caption\":\"cities\",\"sample_value\":\"EMBU\",\"path\":[\"cities\"]}}}}",
+            "url": "https://brasilapi.com.br/api/ddd/v1/[ddd]",
+            "url_params": {
+                "AAI": {
+                    "doc": "DDD com 2 dígitos",
+                    "key": "ddd",
+                    "private": true,
+                    "value": "11"
+                }
+            }
+        },
+        "AAJ": {
+            "initialized": true,
+            "method": "get",
+            "name": "CNPJ",
+            "publish_as": "data",
+            "rank": 4,
+            "ret_value": "api.1614743636217x426000411791196160.plugin_api.AAJ",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAJ\":{\"caption\":\"CNPJ\",\"fields\":{\"_p_cnpj\":{\"ret_value\":\"text\",\"caption\":\"cnpj\",\"sample_value\":\"34915507000197\",\"path\":[\"cnpj\"]},\"_p_identificador_matriz_filial\":{\"ret_value\":\"number\",\"caption\":\"identificador_matriz_filial\",\"sample_value\":1,\"path\":[\"identificador_matriz_filial\"]},\"_p_descricao_matriz_filial\":{\"ret_value\":\"text\",\"caption\":\"descricao_matriz_filial\",\"sample_value\":\"Matriz\",\"path\":[\"descricao_matriz_filial\"]},\"_p_razao_social\":{\"ret_value\":\"text\",\"caption\":\"razao_social\",\"sample_value\":\"AMOREIRA ARQUITETURA EIRELI\",\"path\":[\"razao_social\"]},\"_p_nome_fantasia\":{\"ret_value\":\"text\",\"caption\":\"nome_fantasia\",\"sample_value\":\"\",\"path\":[\"nome_fantasia\"]},\"_p_situacao_cadastral\":{\"ret_value\":\"number\",\"caption\":\"situacao_cadastral\",\"sample_value\":2,\"path\":[\"situacao_cadastral\"]},\"_p_descricao_situacao_cadastral\":{\"ret_value\":\"text\",\"caption\":\"descricao_situacao_cadastral\",\"sample_value\":\"Ativa\",\"path\":[\"descricao_situacao_cadastral\"]},\"_p_data_situacao_cadastral\":{\"ret_value\":\"text\",\"caption\":\"data_situacao_cadastral\",\"sample_value\":\"2019-09-18\",\"path\":[\"data_situacao_cadastral\"]},\"_p_motivo_situacao_cadastral\":{\"ret_value\":\"number\",\"caption\":\"motivo_situacao_cadastral\",\"sample_value\":0,\"path\":[\"motivo_situacao_cadastral\"]},\"_p_nome_cidade_exterior\":{\"ret_value\":\"text\",\"caption\":\"nome_cidade_exterior\",\"sample_value\":\"\",\"path\":[\"nome_cidade_exterior\"]},\"_p_codigo_natureza_juridica\":{\"ret_value\":\"number\",\"caption\":\"codigo_natureza_juridica\",\"sample_value\":2305,\"path\":[\"codigo_natureza_juridica\"]},\"_p_data_inicio_atividade\":{\"ret_value\":\"text\",\"caption\":\"data_inicio_atividade\",\"sample_value\":\"2019-09-18\",\"path\":[\"data_inicio_atividade\"]},\"_p_cnae_fiscal\":{\"ret_value\":\"number\",\"caption\":\"cnae_fiscal\",\"sample_value\":7111100,\"path\":[\"cnae_fiscal\"]},\"_p_cnae_fiscal_descricao\":{\"ret_value\":\"text\",\"caption\":\"cnae_fiscal_descricao\",\"sample_value\":\"Serviços de arquitetura\",\"path\":[\"cnae_fiscal_descricao\"]},\"_p_descricao_tipo_logradouro\":{\"ret_value\":\"text\",\"caption\":\"descricao_tipo_logradouro\",\"sample_value\":\"\",\"path\":[\"descricao_tipo_logradouro\"]},\"_p_logradouro\":{\"ret_value\":\"text\",\"caption\":\"logradouro\",\"sample_value\":\"\",\"path\":[\"logradouro\"]},\"_p_numero\":{\"ret_value\":\"text\",\"caption\":\"numero\",\"sample_value\":\"\",\"path\":[\"numero\"]},\"_p_complemento\":{\"ret_value\":\"text\",\"caption\":\"complemento\",\"sample_value\":\"\",\"path\":[\"complemento\"]},\"_p_bairro\":{\"ret_value\":\"text\",\"caption\":\"bairro\",\"sample_value\":\"JARDIM DOS ESTADOS\",\"path\":[\"bairro\"]},\"_p_cep\":{\"ret_value\":\"text\",\"caption\":\"cep\",\"sample_value\":\"79020250\",\"path\":[\"cep\"]},\"_p_uf\":{\"ret_value\":\"text\",\"caption\":\"uf\",\"sample_value\":\"MS\",\"path\":[\"uf\"]},\"_p_codigo_municipio\":{\"ret_value\":\"number\",\"caption\":\"codigo_municipio\",\"sample_value\":9051,\"path\":[\"codigo_municipio\"]},\"_p_municipio\":{\"ret_value\":\"text\",\"caption\":\"municipio\",\"sample_value\":\"CAMPO GRANDE\",\"path\":[\"municipio\"]},\"_p_ddd_telefone_1\":{\"ret_value\":\"text\",\"caption\":\"ddd_telefone_1\",\"sample_value\":\"\",\"path\":[\"ddd_telefone_1\"]},\"_p_ddd_telefone_2\":{\"ret_value\":\"text\",\"caption\":\"ddd_telefone_2\",\"sample_value\":\"\",\"path\":[\"ddd_telefone_2\"]},\"_p_ddd_fax\":{\"ret_value\":\"text\",\"caption\":\"ddd_fax\",\"sample_value\":\"\",\"path\":[\"ddd_fax\"]},\"_p_qualificacao_do_responsavel\":{\"ret_value\":\"number\",\"caption\":\"qualificacao_do_responsavel\",\"sample_value\":65,\"path\":[\"qualificacao_do_responsavel\"]},\"_p_capital_social\":{\"ret_value\":\"number\",\"caption\":\"capital_social\",\"sample_value\":10000000,\"path\":[\"capital_social\"]},\"_p_porte\":{\"ret_value\":\"number\",\"caption\":\"porte\",\"sample_value\":1,\"path\":[\"porte\"]},\"_p_descricao_porte\":{\"ret_value\":\"text\",\"caption\":\"descricao_porte\",\"sample_value\":\"Microempresa\",\"path\":[\"descricao_porte\"]},\"_p_opcao_pelo_simples\":{\"ret_value\":\"boolean\",\"caption\":\"opcao_pelo_simples\",\"sample_value\":true,\"path\":[\"opcao_pelo_simples\"]},\"_p_data_opcao_pelo_simples\":{\"ret_value\":\"text\",\"caption\":\"data_opcao_pelo_simples\",\"sample_value\":\"2019-09-18\",\"path\":[\"data_opcao_pelo_simples\"]},\"_p_data_exclusao_do_simples\":{\"ret_value\":\"text\",\"caption\":\"data_exclusao_do_simples\",\"sample_value\":null,\"path\":[\"data_exclusao_do_simples\"]},\"_p_opcao_pelo_mei\":{\"ret_value\":\"boolean\",\"caption\":\"opcao_pelo_mei\",\"sample_value\":false,\"path\":[\"opcao_pelo_mei\"]},\"_p_situacao_especial\":{\"ret_value\":\"text\",\"caption\":\"situacao_especial\",\"sample_value\":\"\",\"path\":[\"situacao_especial\"]},\"_p_data_situacao_especial\":{\"ret_value\":\"text\",\"caption\":\"data_situacao_especial\",\"sample_value\":null,\"path\":[\"data_situacao_especial\"]},\"_p_qsa\":{\"ret_value\":\"list.api.1614743636217x426000411791196160.plugin_api.AAJ.qsa\",\"caption\":\"qsa\",\"path\":[\"qsa\"]},\"_p_cnaes_secundarias\":{\"ret_value\":\"list.api.1614743636217x426000411791196160.plugin_api.AAJ.cnaes_secundarias\",\"caption\":\"cnaes_secundarias\",\"path\":[\"cnaes_secundarias\"]}}},\"plugin_api.AAJ.qsa\":{\"caption\":\"CNPJ qsa\",\"fields\":{\"_p_cnpj\":{\"ret_value\":\"text\",\"caption\":\"cnpj\",\"sample_value\":\"34915507000197\",\"path\":[\"cnpj\"]},\"_p_identificador_de_socio\":{\"ret_value\":\"number\",\"caption\":\"identificador_de_socio\",\"sample_value\":2,\"path\":[\"identificador_de_socio\"]},\"_p_nome_socio\":{\"ret_value\":\"text\",\"caption\":\"nome_socio\",\"sample_value\":\"CRISTIANO AZEVEDO COSTA\",\"path\":[\"nome_socio\"]},\"_p_cnpj_cpf_do_socio\":{\"ret_value\":\"text\",\"caption\":\"cnpj_cpf_do_socio\",\"sample_value\":\"\",\"path\":[\"cnpj_cpf_do_socio\"]},\"_p_codigo_qualificacao_socio\":{\"ret_value\":\"number\",\"caption\":\"codigo_qualificacao_socio\",\"sample_value\":65,\"path\":[\"codigo_qualificacao_socio\"]},\"_p_percentual_capital_social\":{\"ret_value\":\"number\",\"caption\":\"percentual_capital_social\",\"sample_value\":0,\"path\":[\"percentual_capital_social\"]},\"_p_data_entrada_sociedade\":{\"ret_value\":\"text\",\"caption\":\"data_entrada_sociedade\",\"sample_value\":\"2019-09-18\",\"path\":[\"data_entrada_sociedade\"]},\"_p_cpf_representante_legal\":{\"ret_value\":\"text\",\"caption\":\"cpf_representante_legal\",\"sample_value\":\"\",\"path\":[\"cpf_representante_legal\"]},\"_p_nome_representante_legal\":{\"ret_value\":\"text\",\"caption\":\"nome_representante_legal\",\"sample_value\":\"\",\"path\":[\"nome_representante_legal\"]},\"_p_codigo_qualificacao_representante_legal\":{\"ret_value\":\"number\",\"caption\":\"codigo_qualificacao_representante_legal\",\"sample_value\":0,\"path\":[\"codigo_qualificacao_representante_legal\"]}}},\"plugin_api.AAJ.cnaes_secundarias\":{\"caption\":\"CNPJ cnaes_secundaria\",\"fields\":{\"_p_codigo\":{\"ret_value\":\"number\",\"caption\":\"codigo\",\"sample_value\":7410202,\"path\":[\"codigo\"]},\"_p_descricao\":{\"ret_value\":\"text\",\"caption\":\"descricao\",\"sample_value\":\"Design de interiores\",\"path\":[\"descricao\"]}}}}",
+            "url": "https://brasilapi.com.br/api/cnpj/v1/[cnpj]",
+            "url_params": {
+                "AAK": {
+                    "key": "cnpj",
+                    "private": true,
+                    "value": "34915507000197"
+                }
+            }
+        },
+        "AAL": {
+            "initialized": true,
+            "is_list": true,
+            "method": "get",
+            "name": "Feriados",
+            "publish_as": "data",
+            "rank": 5,
+            "ret_value": "api.1614743636217x426000411791196160.plugin_api.AAL",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAL\":{\"caption\":\"Feriado\",\"fields\":{\"_p_date\":{\"ret_value\":\"date\",\"caption\":\"date\",\"sample_value\":\"2021-01-01\",\"path\":[\"date\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"Confraternização mundial\",\"path\":[\"name\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"national\",\"path\":[\"type\"]}}}}",
+            "url": "https://brasilapi.com.br/api/feriados/v1/[ano]",
+            "url_params": {
+                "AAO": {
+                    "doc": "Ano com 4 dígitos",
+                    "key": "ano",
+                    "private": true,
+                    "value": "2021"
+                }
+            }
+        }
+    },
+    "human": "BrasilAPI"
+}
